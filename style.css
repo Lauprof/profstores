@@ -1,0 +1,323 @@
+*{
+padding:0%;
+margin:0%;
+box-sizing:border-box;
+resize:both;
+
+}
+span{
+position:relative;
+float:right;
+right:0%;
+
+}
+
+#nav{
+position:absolute;
+display:inline-block;
+height:100%;
+width:5%;
+transition:3s;
+right:0%;
+z-index:5;
+}
+
+.navigation{
+display:block;
+
+
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+border:1px solid teal;
+border-radius:10px;
+background-color:white;
+display:none;
+right:0%;
+position:absolute;
+bottom:0%;
+height:100%;
+width:100%;
+overflow:auto;
+
+}
+
+.navigation:hover ul {
+
+display:block;
+}
+#nav:hover span{
+display:none;
+}
+#nav:hover{
+width:50%;
+}
+
+li a{
+color:red;
+font-weight:bolder;
+display:block;
+text-decoration:none;
+padding:55px;
+font-family:cursive;
+
+}
+li a.link {
+  background-color: black;
+  color: white;
+}
+
+li a:hover:not(.link) {
+  background-color: tomato;
+  color: white;
+}
+#arrow{
+position:fixed;
+right:0%;
+bottom:0%;
+padding-right:10px;
+z-index:4;
+
+}
+#arrow >a{
+text-decoration:none;
+}
+
+.row{
+margin-top:20px;
+padding:0px;
+z-index:1;
+display:flex;
+
+
+}
+
+.row::after{
+content:" ";
+clear:both;
+display:table;
+}
+.cols{
+
+float:left;
+max-width:40%;
+
+
+
+
+}
+.cols img{
+width:100%;
+border-radius:5px;
+transition:5s;
+
+
+
+}
+.cols img:hover{
+transform:scale(1.5,1.5);
+
+}
+.content{
+border:0.4px solid black;
+border-color:none;
+border-radius:30%;
+color:teal;
+border-width:3px;
+box-sizing:border-box;
+padding:40px;
+animation:colors 3s linear infinite;
+
+}
+@keyframes colors{
+0%{border-color:none;}
+25%{border-right-color:red;}
+50%{border-bottom-color:green;}
+75%{border-left-color:aqua;}
+100%{border-top-color:lightblue;}
+}
+.history{
+border-style:solid;
+border-radius:20%;
+box-sizing:border-box;
+padding:30px;
+border-width:2.5px;
+color:purple;
+border-top-color:white;
+border-right-color:teal;
+border-bottom-color:blue;
+border-left-color:red;
+
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color:rgba(244,235,235,0.7);
+  float: left;
+  width: 100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #756dde;
+}
+
+div.gallery img {
+padding:5px;
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:brown;
+  font-style:italic;
+  font-family:cursive;
+  font-size:1.4em;
+  text-shadow:10px 10px 20px red;
+}
+
+#feedback{
+width:100%;
+
+
+background-color:lightblue;
+border-radius:10px;
+padding:10px;
+
+
+}
+
+input[type=email],input[type=text]{
+width:70%;
+padding:10px 12px;
+margin-left:18px;
+outline-style:solid;
+outline-color:lightblue;
+border:1px inset red;
+
+
+}
+textarea{
+padding:6px;
+border-style:inset;
+border-color:none;
+
+border-top-color:blue;
+border-botton-color:black;
+border-right-color:brown;
+border-radius:6px;
+border-width:2px;
+}
+label{
+margin-left:40px;
+font-weight:bold;
+color:teal;
+font-variant:small-caps;
+}
+input[type=submit]{
+position:relative;
+left:50%;
+font-family:cursive;
+border:none;
+padding:10px;
+border-radius:6px;
+margin-bottom:20px;
+color:black;
+font-size:1.4em;
+background-color:orange;
+
+}
+section{
+height:300px;
+width:100%;
+background-color:black;
+padding:0%;
+animation :bgcolor 4s infinite;
+
+}
+@keyframes bgcolor{
+0%{background-color:teal;}
+100%{background-color:grey;}
+
+
+}
+
+
+section>p{
+color:white;
+text-align:center;
+position:relative;
+top:50%;
+
+font-size:xx-large;
+font-family:cursive;
+text-shadow:1.2px 1.1px red;
+animation :order 3s infinite;
+
+}
+
+
+@keyframes order{
+0%{transform:translateX(0%);}
+100%{transform:translateX(-100%);}
+}
+section h4{
+color:white;
+text-align:center;
+font-size:1.3em;
+text-shadow:1.4px 1.1px green;
+font-family:cursive;
+}
+section h3{
+color:white;
+position:relative;
+left:40%;
+font-size:17px;
+top:25%;
+font-weight:bolder;
+text-align:center;
+width:45%;
+border-radius:100%;
+border-top:transparent;
+border-bottom-color:red;
+border-right-color:green;
+border-left-color:brown;
+padding:8px;
+font-family:cursive;
+text-transform:uppercase;
+border-width:1px;
+border-style:solid;
+animation: rotat 3s linear infinite;
+}
+@keyframes rotat{
+from{transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+
+}
+footer{
+font-size:1.4em;
+margin:10px;
+padding:10px;
+font-family:monospace;
+
+}
+.prof{
+position:relative;
+background-color:rgba(05,05,04,0.3);
+color:teal;
+
+
+}
+.prof p{
+padding:25px;
+text-align:center;
+font-weight:bolder;
+
+}
+i{
+color:grey;
+font-weight:bolder;
+}

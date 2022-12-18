@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="author" content="lauprof">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style type="text/css">
+body{
+background-color:teal;
+
+}
+
+input[type=text]:focus{
+
+border:1px solid blue;
+border-radius:8px;
+color:teal;
+font-family:monospace;
+
+}
+input[type=email]:focus{
+
+border:1px solid blue;
+border-radius:8px;
+color:teal;
+font-family:monospace;
+
+}
+.leg{
+color:red;
+font-family:monospace;
+margin-left:10px;
+font-size:xx-large;
+
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+<p id ="bod"></p>
+
+<br><br><br>
+
+<form id ="feedback" onsubmit="alert('Your feedback has been received');">
+<fieldset>
+<legend class="leg">YOUR FEEDBACK</legend>
+<label>First Name</label><br><br>
+<input type="text" name ="firstname"     required><br><br>
+
+<label>Middle Name</label><br><br>
+<input type ="text" name="middlename" required><br><br>
+<label>SURNAME</label><br><br>
+<input type ="text" name="surname" required><br><br>
+<label>Email</label><br><br>
+<input type ="email" name="email" required><br><br>
+<label>Feedback</label><br><br>
+<textarea rows="10" cols="40" required>
+
+</textarea><br><br>
+
+
+<input type="submit" value="Submit" >
+
+</fieldset>
+</form>
+<!--
+<script type="text/javascript">
+var m = document.forms["feedback"];
+var text = "";
+var i;
+for (i = 0; i < m.length; i++) {
+  text += m.elements[i].value+ "<br>";
+}
+document.getElementById("bod").innerHTML = text;
+
+
+</script>
+-->
+</body>
+</html>
